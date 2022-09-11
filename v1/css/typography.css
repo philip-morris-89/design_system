@@ -1,32 +1,20 @@
-:root {
-  --font-family-001:      "Helvetica Neue", Helvetica, sans-serif;
-  --font-weight-light:    200;
-  --font-weight-normal:   normal;
-  --font-weight-bold:     bold;
-
-  --font-size-xxs:        0.625rem;   /* 10px (Double Extra Small) */
-  --font-size-xs:         0.75rem;    /* 12px (Extra Small) */
-  --font-size-s:          0.875rem;   /* 14px (Small) */
-  --font-size-default:    1rem;       /* 16px (Default) */
-  --font-size-m:          1.5rem;     /* 24px (Medium) */
-  --font-size-l:          2rem;       /* 32px (Large) */
-  --font-size-xl:         2.5rem;     /* 40px (Extra Large) */
-  --font-size-xxl:        3rem;       /* 48px (Double Extra Large) */
-  --font-size-big:        3.5rem;     /* 56px (Big) */
-  --font-size-huge:       4rem;       /* 64px (Huge) */
-  --font-size-massive:    5rem;       /* 80px (Massive) */
+@font-face {
+  font-family: "ceraPro-Light";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Light.woff2);
 }
-
-.headline-001 {
-  font-family: var(--font-family-001);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-xxl);
-  line-height: 1;
+@font-face {
+  font-family: "ceraPro-Regular";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Regular.woff2);
 }
-
-.headline-002 {
-  font-family: var(--font-family-001);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-l);
-  line-height: 1;
+@font-face {
+  font-family: "ceraPro-Medium";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Medium.woff2);
 }
+@font-face {
+  font-family: "ceraPro-Bold";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Bold.woff2);
+}
+@font-face {
+  font-family: "ceraPro-Black";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Black.woff2);
+}/*# sourceMappingURL=typography.css.map */

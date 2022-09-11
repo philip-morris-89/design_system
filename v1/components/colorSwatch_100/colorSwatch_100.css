@@ -1,3 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1;
+  font-family: "Helvetica Neue", helvetica, sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html[data-display=mobile] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: black;
+}
+
+html[data-display=mobile] body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 390px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: white;
+  padding: 1rem;
+}
+
+[data-flex=row] {
+  display: flex;
+  flex-direction: row;
+}
+
+[data-flex=column] {
+  display: flex;
+  flex-direction: column;
+}
+
 :root {
   --lego-red: #d01012;
   --lego-yellow: #ffcf00;
@@ -281,4 +370,194 @@
   --blue-grey-700: #455a64;
   --blue-grey-800: #37474f;
   --blue-grey-900: #263238;
-}/*# sourceMappingURL=colors.css.map */
+}
+
+@font-face {
+  font-family: "ceraPro-Light";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Light.woff2);
+}
+@font-face {
+  font-family: "ceraPro-Regular";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Regular.woff2);
+}
+@font-face {
+  font-family: "ceraPro-Medium";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Medium.woff2);
+}
+@font-face {
+  font-family: "ceraPro-Bold";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Bold.woff2);
+}
+@font-face {
+  font-family: "ceraPro-Black";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Black.woff2);
+}
+.colorSwatch[data-type=square] {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+.colorSwatch[data-type=square] .colorSwatch--description {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+.colorSwatch[data-type=square] .colorSwatch--description--title {
+  padding-bottom: 0.5rem;
+  font-family: medium;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Medium";
+  line-height: 1;
+}
+.colorSwatch[data-type=square] .colorSwatch--description--subtitle {
+  font-family: medium;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Medium";
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.colorSwatch[data-type=line] {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.colorSwatch[data-type=line] .colorSwatch--description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.colorSwatch[data-type=line] .colorSwatch--description--title {
+  font-family: medium;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Medium";
+  line-height: 1;
+  padding-right: 0.5rem;
+}
+.colorSwatch[data-type=line] .colorSwatch--description--subtitle {
+  font-family: medium;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Medium";
+  text-transform: uppercase;
+  line-height: 1;
+  padding-left: 0.5rem;
+}
+
+[data-color=color-100] {
+  background-color: var(--lego-red);
+}
+
+[data-color=color-200] {
+  background-color: var(--lego-yellow);
+}
+
+[data-color=color-300] {
+  background-color: var(--lego-orange);
+}
+
+[data-color=color-400] {
+  background-color: var(--lego-indigo);
+}
+
+[data-color=color-500] {
+  background-color: var(--lego-blue);
+}
+
+[data-color=blue-grey-50] {
+  background-color: var(--blue-grey-50);
+}
+
+[data-color=blue-grey-100] {
+  background-color: var(--blue-grey-100);
+}
+
+[data-color=blue-grey-200] {
+  background-color: var(--blue-grey-200);
+}
+
+[data-color=blue-grey-300] {
+  background-color: var(--blue-grey-300);
+}
+
+[data-color=blue-grey-400] {
+  background-color: var(--blue-grey-400);
+}
+
+[data-color=blue-grey-500] {
+  background-color: var(--blue-grey-500);
+}
+
+[data-color=blue-grey-600] {
+  background-color: var(--blue-grey-600);
+}
+
+[data-color=blue-grey-700] {
+  background-color: var(--blue-grey-700);
+}
+
+[data-color=blue-grey-800] {
+  background-color: var(--blue-grey-800);
+}
+
+[data-color=blue-grey-900] {
+  background-color: var(--blue-grey-900);
+}
+
+[data-color=grey-50] {
+  background-color: var(--grey-50);
+}
+
+[data-color=grey-100] {
+  background-color: var(--grey-100);
+}
+
+[data-color=grey-200] {
+  background-color: var(--grey-200);
+}
+
+[data-color=grey-300] {
+  background-color: var(--grey-300);
+}
+
+[data-color=grey-400] {
+  background-color: var(--grey-400);
+}
+
+[data-color=grey-500] {
+  background-color: var(--grey-500);
+}
+
+[data-color=grey-600] {
+  background-color: var(--grey-600);
+}
+
+[data-color=grey-700] {
+  background-color: var(--grey-700);
+}
+
+[data-color=grey-800] {
+  background-color: var(--grey-800);
+}
+
+[data-color=grey-900] {
+  background-color: var(--grey-900);
+}
+
+[data-contrast=light] {
+  color: white;
+}
+
+[data-contrast=dark] {
+  color: black;
+}/*# sourceMappingURL=colorSwatch_100.css.map */

@@ -1,0 +1,164 @@
+@import '../../main.scss';
+
+.colorSwatch[data-type="square"] {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+
+  & .colorSwatch--description {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: $size-16;
+
+    &--title {
+      padding-bottom: $size-8;
+      @include body-100(medium);
+      line-height: 1;
+    }
+    &--subtitle {
+      @include body-200(medium);
+      text-transform: uppercase;
+      line-height: 1;
+    }
+  }// Decription
+}// Color Swatch Square
+
+.colorSwatch[data-type="line"] {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  & .colorSwatch--description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: $size-16;
+
+    &--title {
+      @include body-100(medium);
+      line-height: 1;
+      padding-right: $size-8;
+    }
+    &--subtitle {
+      @include body-200(medium);
+      text-transform: uppercase;
+      line-height: 1;
+      padding-left: $size-8;
+    }
+  }// Decription
+}// Color Swatch Square
+
+[data-color="color-100"] {
+  background-color: var(--lego-red);
+}
+
+[data-color="color-200"] {
+  background-color: var(--lego-yellow);
+}
+
+[data-color="color-300"] {
+  background-color: var(--lego-orange);
+}
+
+[data-color="color-400"] {
+  background-color: var(--lego-indigo);
+}
+
+[data-color="color-500"] {
+  background-color: var(--lego-blue);
+}
+
+[data-color="blue-grey-50"] {
+  background-color: var(--blue-grey-50);
+}
+
+[data-color="blue-grey-100"] {
+  background-color: var(--blue-grey-100);
+}
+
+[data-color="blue-grey-200"] {
+  background-color: var(--blue-grey-200);
+}
+
+[data-color="blue-grey-300"] {
+  background-color: var(--blue-grey-300);
+}
+
+[data-color="blue-grey-400"] {
+  background-color: var(--blue-grey-400);
+}
+
+[data-color="blue-grey-500"] {
+  background-color: var(--blue-grey-500);
+}
+
+[data-color="blue-grey-600"] {
+  background-color: var(--blue-grey-600);
+}
+
+[data-color="blue-grey-700"] {
+  background-color: var(--blue-grey-700);
+}
+
+[data-color="blue-grey-800"] {
+  background-color: var(--blue-grey-800);
+}
+
+[data-color="blue-grey-900"] {
+  background-color: var(--blue-grey-900);
+}
+
+[data-color="grey-50"] {
+  background-color: var(--grey-50);
+}
+
+[data-color="grey-100"] {
+  background-color: var(--grey-100);
+}
+
+[data-color="grey-200"] {
+  background-color: var(--grey-200);
+}
+
+[data-color="grey-300"] {
+  background-color: var(--grey-300);
+}
+
+[data-color="grey-400"] {
+  background-color: var(--grey-400);
+}
+
+[data-color="grey-500"] {
+  background-color: var(--grey-500);
+}
+
+[data-color="grey-600"] {
+  background-color: var(--grey-600);
+}
+
+[data-color="grey-700"] {
+  background-color: var(--grey-700);
+}
+
+[data-color="grey-800"] {
+  background-color: var(--grey-800);
+}
+
+[data-color="grey-900"] {
+  background-color: var(--grey-900);
+}
+
+[data-contrast="light"] {
+  color: white;
+}
+
+[data-contrast="dark"] {
+  color: black;
+}
+

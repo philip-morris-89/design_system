@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body.library main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+body.library header {
+  flex-direction: column;
+  padding: 1rem;
+}
+
+body.library .container {
+  display: flex;
+  padding: 1rem;
+}
+
+[data-flex="row"] {
+  display: flex;
+  flex-direction: row;
+}
+
+[data-flex="column"] {
+  display: flex;
+  flex-direction: column;
+}
+
+body.library .innerContainer {
+  padding: 1rem;
+  flex-grow: 1;
+  flex-basis: 50%;
+  border: 1px solid black;
+  margin: 1rem;
+}
+
+body.library .innerContainer section {
+  padding: 0 1rem;
+}
+
+body.library .innerContainer section h1,
+body.library .innerContainer section h2,
+body.library .innerContainer section h3,
+body.library .innerContainer section h4,
+body.library .innerContainer section h5,
+body.library .innerContainer section h6,
+body.library .innerContainer section p {
+  padding: 1rem 0;
+}
+
+body.library .colors {
+  flex-wrap: wrap;
+}
+
+body.library .colorSwatch_100 {
+  flex-grow: 0;
+  flex-basis: 33.33%;
+}
+
+@media only screen and (min-width: 720px) {
+  
+}
