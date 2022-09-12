@@ -69,10 +69,10 @@ $aside-width-size: 25%;
         text-decoration: none;
         color: var(--blue-grey-300);
         color: black;
+        font-size: $size-16;
 
         &:hover {
           text-decoration: underline;
-          text-decoration-thickness: 2px;
         }
       }
     } // li
@@ -84,6 +84,10 @@ $aside-width-size: 25%;
 
       li {
         padding: $size-8 0;
+      }
+
+      li a {
+        font-size: 0.875em;
       }
 
       li:first-child {
@@ -111,6 +115,7 @@ $aside-width-size: 25%;
 .designsystem_section {
   display: flex;
   flex-direction: column;
+  padding-bottom: $size-48;
 }
 
 .designsystem_header {
